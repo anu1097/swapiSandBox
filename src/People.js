@@ -26,11 +26,15 @@ export default function People() {
 
   useEffect(fetchPeopleData, []);
 
-  return (
-    <div>
-      <div>{peopleData.name}</div>
-      <div>{peopleData.height}</div>
-      <div>{peopleData.mass}</div>
-    </div>
-  );
+  const displayData = [];
+
+  for (const [key, value] of Object.entries(peopleData)) {
+    displayData.push(
+      <div>
+        {key} : {value}
+      </div>
+    );
+  }
+
+  return <div className="peopleContainer">{displayData}</div>;
 }

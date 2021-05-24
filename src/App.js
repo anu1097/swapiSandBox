@@ -51,7 +51,7 @@ export default function App() {
   const grids = createGrids();
 
   return (
-    <div>
+    <div className="App">
       <h1>All People Data</h1>
       <div>{grids}</div>
     </div>

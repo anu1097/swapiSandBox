@@ -4,14 +4,18 @@
 }
 
 .gridCell {
-  border: 1px solid;
-  margin: 5px;
-  padding: 5px;
   text-align: center;
+  width: 33.3%;
+  float: left;
+  margin: 5px 0;
 }
 
 .gridContainer {
+  display: inline-block;
+}
+
+.peopleContainer {
+  margin: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
 }
