@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.gridCell {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
